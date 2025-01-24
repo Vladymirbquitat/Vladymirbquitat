@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ColorButton">si Elizabeth kay ni sakit ang iyang tiyan</p> 
+    <button id="Content">click me to see changes</button>
+    
+</body>
+<script>
+    let name= document.getElementById('ColorButton')
+    document.getElementById('Content').addEventListener("click" , function(){
+        name.innerHTML = "Wala na ni sakit ang tiyan ni Elizabeth";
+        name.style.fontFamily = "Arial";
+        name.style.color = "Black";
+        document.body.style.backgroundColor="Orange";
+
+    });
+</script>
+</html>
